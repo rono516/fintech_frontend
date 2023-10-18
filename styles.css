@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@400;600;800&display=swap');
+
+/* Base styling  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1 rem or 100% equals 16pixels. Setting it to 62.5% means it is set to a 
+    maximum of 10pixels instead of 16pixels, 62.5% of 16
+    */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    /*We have set the initial 1 rem to equal 10pixels*/
+    /*So 1.6 rem = 1.6*10 equals 16pixels -> which is the normal size*/
+}
+
+h1,
+h2,
+p {
+    margin: 1.6rem 0;
+
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem
+        /*36pixels*/
+    ;
+
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+img {
+    /*To make it responsive*/
+    width: 100%;
+    height: auto;
+    /*to fit inside container*/
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/*Style hero section*/
+
+header {
+    height: 100vh;
+    /* background-color: red; */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
